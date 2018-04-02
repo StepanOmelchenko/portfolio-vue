@@ -1,21 +1,23 @@
-import Vue from "vue";
-import Router from "vue-router";
-import Home from "./views/Home.vue";
-import About from "./views/About.vue";
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+Vue.use(VueRouter);
 
-Vue.use(Router);
+import About from './components/about.vue'
+import Page from './components/page.vue'
 
-export default new Router({
-  routes: [
-    {
-      path: "/",
-      name: "home",
-      component: Home
-    },
-    {
-      path: "/about",
-      name: "about",
-      component: About
-    }
-  ]
-});
+const routes = [
+  {
+    path: '/',
+    component: About
+  },
+  {
+    path : '/pages/:pageId',
+    component: Page,
+    props: true
+  }
+]
+
+export default new VueRouter({
+  routes,
+  mode: 'history'
+})
