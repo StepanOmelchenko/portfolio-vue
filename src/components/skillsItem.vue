@@ -1,11 +1,10 @@
 <template lang="pug">
-  li.skill__wrap
+  li.skill__item
       .skill__name {{skill.name}}
-      .skill__value 
-        input(type="text" :value="skill.percents").input__value
-        span &#37; 
-      .skill__btn
-        button(type="button" @click="removeExistedSkill(skill.id)").btn Удалить
+      label.skill__label 
+        input(type="text" :value="skill.percents").skill__value
+      span.skill__span &#37; 
+      button(type="button" @click="removeExistedSkill(skill.id)").skill__btn Del
 </template>
 
 <script>
@@ -25,4 +24,19 @@ export default {
 
 <style lang="scss" scoped>
 
+  .skill__item{
+    display: flex;
+  }
+
+  .skill__value{
+    width: 46px;
+    height: 32px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+  }
+
+  .skill__name{
+   flex: 1;
+  }
 </style>

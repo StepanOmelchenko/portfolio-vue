@@ -36,8 +36,9 @@ export default {
 <style lang="scss" scoped>
   .about{
       width: 100%;
-      height: 100%;
+      height: 100vh;
       background-color: rgba(#fff, .8);
+
 
       &__header{
           font-size: 21px;

@@ -27,3 +27,25 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+  .works{
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(#fff, .8);
+
+
+      &__header{
+          font-size: 21px;
+          color: #566358;
+          padding: 50px;
+      }
+
+      &__form{
+        margin-left: 20px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+      }
+  }
+</style>

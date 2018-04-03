@@ -8,7 +8,7 @@
         :key="skill.id"
         :skill="skill"
       )
-    skill__input(
+    skill-input(
       :type="convertSkillStringToNum(skillType)"
     )
 </template>
@@ -48,7 +48,7 @@ export default {
 
 .skills__box {
     margin-top: 30px;
-    width: 100px;
+    width: 230px;
 
     &:first-child{
       margin-top: 0;

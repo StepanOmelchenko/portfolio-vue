@@ -5,8 +5,8 @@
       v-model="skillName"  
       @keydown.enter="addNewSkill"
       :class="{error : validation.hasError('skillName')}"
-    )
-    button(type="button" @click="addNewSkill") Сохранить
+    ).skill__input
+    button(type="button" @click="addNewSkill").skill__btn Сохранить
     .error-message {{validation.firstError('skillName')}}
 </template>
 <script>
@@ -51,6 +51,25 @@ export default {
   .error {
     border: 1px solid red;
     outline: none;
+  }
+
+  .skill-input{
+    margin-top: 20px;
+  }
+
+  .skill__input{
+    width: 100px;
+    margin-right: 30px;
+  }
+
+  .skill__btn{
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 40px;
+    background-color: #6c9c5a;
+    color: $white;
+    border-radius: 5px;
   }
 </style>
 
