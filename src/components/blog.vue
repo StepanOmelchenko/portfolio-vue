@@ -10,7 +10,7 @@
         span.blog__span Дата публикации
         input(type='text' name='article-date' class='blog__input' placeholder="Дата" required)  
       label.blog__label      
-        textarea(type="text" name='article-text' class='blog__textarea' placeholder="Текст статьи")   
+        textarea.blog__textarea(type="text" name='article-text' placeholder="Текст статьи")   
       button.blog__btn(type="button" @click="addArticle") Добавить статью    
 </template>
 <script>
@@ -30,11 +30,16 @@
       background-color: rgba(#fff, .8);
 
 
-      &__header,
-      &__title{
+      &__header{
           font-size: 21px;
           color: #566358;
           padding: 50px;
+      }
+
+      &__title{
+          font-size: 21px;
+          color: #566358;
+          padding: 10px;
       }
 
       &__form{
@@ -46,6 +51,11 @@
 
       &__label{
         margin-top: 30px;
+      }
+
+      &__textarea{
+        width: 100%;
+        height: 200px;
       }
   }
 </style>

@@ -4,7 +4,7 @@
     form.works__form(enctype="multipart/form-data" method="post")  
       .works__title Добавить работу
       label.works__label
-        span.works__span Заголовок
+        span.works__span Заголовок работы
         input.works__input(type='text' name='work-name' placeholder="Введите заголовок" required)
       label.works__label
         span.works__span Список технологий     
@@ -46,6 +46,18 @@ export default {
         width: 300px;
         display: flex;
         flex-direction: column;
+      }
+
+      &__label{
+        margin-top: 20px;
+
+        &:first-child{
+          margin-top: 0;
+        }
+      }
+
+      &__add{
+        margin-top: 20px;
       }
   }
 </style>
