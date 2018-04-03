@@ -1,8 +1,9 @@
 <template lang="pug">
-  .tabs
-    ul.tabs__list
-      li.tabs__item(v-for="tab in tabs")
-        router-link.tabs__link(:to="tab.href" :class="{'tabs__item--active' : tab.active}" v-on:click="setActive(tab)") {{tab.name}}
+    .tabs
+        ul.tabs__list
+            li.tabs__item(v-for="tab in tabs")
+                router-link.tabs__link(:to="tab.href" :class="{'tabs__item--active' : tab.active}")
+                    span(v-on:click="setActive(tab)") {{tab.name}}
 </template>
 
 <script>
@@ -13,14 +14,13 @@ export default {
                 {name: 'About', href: "/", active: true},
                 {name: 'Works', href: "/works", active: false},
                 {name: 'Articles', href: "/blog", active: false}
-            ],
-            tabsList: document.querySelectorAll('tabs__item')
+            ]
         }
     },
     methods: {
         setActive(tab) {
-            console.log(tab);
-            this.tabsList.forEach((item) => {
+            console.log(this.tabs);
+            this.tabs.forEach((item) => {
                 item.active = false;
             });
             tab.active = true;

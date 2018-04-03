@@ -47,12 +47,16 @@ export default {
 }
 
 .skills__box {
-    margin-top: 30px;
+    margin-top: 20px;
     width: 230px;
 
     &:first-child{
       margin-top: 0;
     }
+}
+
+.skills__list{
+  margin-left: 10px;
 }
 
 </style>

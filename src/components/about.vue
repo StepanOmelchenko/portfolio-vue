@@ -36,7 +36,7 @@ export default {
 <style lang="scss" scoped>
   .about{
       width: 100%;
-      height: 100vh;
+      height: 100%;
       background-color: rgba(#fff, .8);
 
 
@@ -49,7 +49,7 @@ export default {
       &__container{
         margin-left: 20px;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         display: flex;
         flex-direction: column;
       }
