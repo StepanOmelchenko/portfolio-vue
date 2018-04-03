@@ -1,10 +1,11 @@
 <template lang="pug">
-  tr
-    td {{skill.name}}
-    td
-      input(type="text" :value="skill.percents")
-    td
-      button(type="button" @click="removeExistedSkill(skill.id)") Удалить
+  li.skill__wrap
+      .skill__name {{skill.name}}
+      .skill__value 
+        input(type="text" :value="skill.percents").input__value
+        span &#37; 
+      .skill__btn
+        button(type="button" @click="removeExistedSkill(skill.id)").btn Удалить
 </template>
 
 <script>
@@ -22,3 +23,6 @@ export default {
 };
 </script>
 
+<style lang="scss" scoped>
+
+</style>

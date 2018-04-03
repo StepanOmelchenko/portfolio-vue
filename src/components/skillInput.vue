@@ -47,7 +47,7 @@ export default {
   }
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
   .error {
     border: 1px solid red;
     outline: none;

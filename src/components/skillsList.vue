@@ -1,18 +1,16 @@
 <template lang="pug">
-  .skills-list
-    .skill-title {{skillType}}
-    table
+  .skills__box
+    .skills__title {{skillType}}
+    ul.skills__list
       skills-item(
         v-for="skill in skills"
         v-if="convertSkillStringToNum(skillType) === skill.type"
         :key="skill.id"
         :skill="skill"
       )
-    skill-input(
+    skill__input(
       :type="convertSkillStringToNum(skillType)"
     )
-    br
-    hr
 </template>
 <script>
 import skillsItem from "./skillsItem";
@@ -38,3 +36,23 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+
+.skills__title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #566358;
+    margin-bottom: 20px;
+}
+
+.skills__box {
+    margin-top: 30px;
+    width: 100px;
+
+    &:first-child{
+      margin-top: 0;
+    }
+}
+
+</style>

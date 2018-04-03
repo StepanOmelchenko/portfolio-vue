@@ -1,12 +1,13 @@
 <template lang="pug">
-  .about-section
-    h1 Страница "Обо мне"
-    skills-list(
-      v-for="skillType in skillsTypes"
-      :key="skillType"
-      :skillType="skillType"
-      :skills="skills"
-    )
+  .about
+    h2.about__header Обо мне
+    .about__container
+      skills-list(
+        v-for="skillType in skillsTypes"
+        :key="skillType"
+        :skillType="skillType"
+        :skills="skills"
+      )
 
 </template>
 <script>
@@ -32,3 +33,24 @@ export default {
   }
 };
 </script>
+<style lang="scss" scoped>
+  .about{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(#fff, .8);
+
+      &__header{
+          font-size: 21px;
+          color: #566358;
+          padding: 50px;
+      }
+
+      &__container{
+        margin-left: 20px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+  }
+</style>
