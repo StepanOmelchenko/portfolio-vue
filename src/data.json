@@ -2,25 +2,25 @@
   {
     "id": 1,
     "name": "Html",
-    "percents": 10,
+    "percents": 50,
     "type": 1
   },
   {
     "id": 2,
     "name": "CSS",
-    "percents": 20,
+    "percents": 50,
     "type": 1
   },
   {
     "id": 3,
     "name": "javaScript",
-    "percents": 30,
+    "percents": 50,
     "type": 1
   },
   {
     "id": 4,
     "name": "Git",
-    "percents": 40,
+    "percents": 50,
     "type": 2
   },
   {
@@ -32,25 +32,25 @@
   {
     "id": 6,
     "name": "Bower",
-    "percents": 60,
+    "percents": 10,
     "type": 2
   },
   {
     "id": 7,
     "name": "Php",
-    "percents": 70,
+    "percents": 10,
     "type": 3
   },
   {
     "id": 8,
     "name": "Node.js",
-    "percents": 80,
+    "percents": 10,
     "type": 3
   },
   {
     "id": 9,
     "name": "Mongo.db",
-    "percents": 90,
+    "percents": 10,
     "type": 3
   }
 ]

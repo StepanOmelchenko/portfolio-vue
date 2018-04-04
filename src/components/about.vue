@@ -1,6 +1,6 @@
 <template lang="pug">
   .about
-    h2.about__header Обо мне
+    h2.about__header Страница "Обо мне"
     .about__container
       skills-list(
         v-for="skillType in skillsTypes"

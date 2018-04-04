@@ -34,9 +34,16 @@ export default {
     border-radius: 5px;
     text-align: center;
     display: inline-block;
+    outline: none;
+    color: #566358;
   }
 
   .skill__name{
    flex: 1;
+   color: #566358;
+  }
+
+  .skill__span{
+    margin: 0 5px;
   }
 </style>
